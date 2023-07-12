@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div id="startpage">
+            <h2>Johnatens Quiz Lets GOOOOO</h2>
+        <button id="startbtn">LETS DO THIS</button>
+        <button id="startPageHighscore" onclick="showHighscore()">HOW GOOD YOU DID</button>
+        </div>
+
+        <div id="quiz">
+            <div id="timer">BETTER HURRY: </div>
+                <div id="questions"><p></p></div>
+                    <button id="a" onclick="checkAnswer('a')"></button>
+                    <button id="b" onclick="checkAnswer('b')"></button>
+                    <button id="c" onclick="checkAnswer('c')"></button>
+                    <button id="d" onclick="checkAnswer('d')"></button>
+                <div id="result"></div>
+        </div>
+        <div id="gameover">
+
+            <div id="finalScore"></div>
+            <input type="text" size = "40" placeholder="Enter you initials for high score" name="intials" id="initials"/>
+            <button id="submitScore">LETS SUBMIT THAT SCORE</button>
+        </div>
+        <div id=highscoreContainer>
+        <div id="high-scorePage">
+            <div id="highscore-header">
+                <h3></h3>
+                <h3></h3>
+            </div>
+            <div id = "highscore-initials"></div>
+            <div id = "highscore-score"></div>
+        </div>
+        <div id="endGameBtns">
+            <button id="playAgain" onclick="replayQuiz()">DO IT AGAIN</button>
+            <button id="clearHighscore" onclick="clearScore()">RESET EVERYTHING</button>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
